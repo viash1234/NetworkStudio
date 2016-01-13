@@ -1,5 +1,7 @@
 package com.example.vivek.myapplication;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -79,14 +81,16 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        Fragment objFrag = null;
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_Account) {
+        if (id == R.id.nav_Account) {
+            objFrag = new Account();
 
         } else if (id == R.id.nav_Analysis) {
+            objFrag = new Analysis();
 
         } else if (id == R.id.nav_Savings) {
+            objFrag = new Savings();
 
         } else if (id == R.id.nav_share) {
 
@@ -96,6 +100,10 @@ public class MainActivity extends AppCompatActivity
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
+        FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.drawer_layout,objFrag).commit();
         return true;
     }
+
 }
