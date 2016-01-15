@@ -2,4 +2,81 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:text="Phone Number"
+        android:layout_below="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill Cycle"
+        android:layout_below="@+id/editText"
+        android:layout_alignEnd="@+id/switch1"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO"
+        android:layout_alignBottom="@+id/numberPicker2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toEndOf="@+id/textView1" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:fadingEdge="none"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toStartOf="@+id/textView1" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monitor"
+        android:textSize="20dp"
+        android:id="@+id/switch1"
+        android:fadingEdge="none"
+        android:fadeScrollbars="false"
+        android:fadingEdgeLength="0dp"
+        android:drawingCacheQuality="high"
+        android:autoText="false"
+        android:layout_below="@+id/numberPicker1"
+        android:layout_centerHorizontal="true"
+        android:checked="false" />
+
 </RelativeLayout>
