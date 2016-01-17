@@ -1,4 +1,4 @@
-package com.example.vivek.myapplication;
+package com.company.NetworkStudio.Main;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -14,6 +14,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.vivek.myapplication.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

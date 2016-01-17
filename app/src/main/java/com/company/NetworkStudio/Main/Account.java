@@ -1,4 +1,4 @@
-package com.example.vivek.myapplication;
+package com.company.NetworkStudio.Main;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import com.example.vivek.myapplication.R;
 
 
 /**
